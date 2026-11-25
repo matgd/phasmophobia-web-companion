@@ -1,0 +1,2005 @@
+{
+    "guide_source": {
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3318319735",
+        "author": "Bloody",
+        "notes": "Dane opracowane na podstawie wklejonych wpisów z poradnika oraz ujednoliconego katalogu dowodów."
+    },
+    "evidence_catalog": [
+        { "pl": "EMF 5", "en": "EMF Level 5" },
+        { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+        { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+        { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+        { "pl": "Widmowe kule", "en": "Ghost Orb" },
+        { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+        { "pl": "Spirit Box", "en": "Spirit Box" }
+    ],
+    "ghosts": [
+        {
+            "id": "spirit",
+            "name": { "pl": "Widziadło", "en": "Spirit" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "smudge",
+                    "pl": "Nie może rozpocząć polowania po użyciu kadzidła przez 180 s / 3 min.",
+                    "en": "Cannot start a hunt for 180s / 3 min after smudging."
+                }
+            ]
+        },
+        {
+            "id": "gallu",
+            "name": { "pl": "Gallu", "en": "Gallu" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.36,
+                "max_mps": 1.96,
+                "display": {
+                    "pl": "1,36 m/s – 1,96 m/s",
+                    "en": "1.36 m/s – 1.96 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 40% (faza osłabiona), poniżej 50% (faza normalna), poniżej 60% (faza agresywna).",
+                    "en": "Below 40% (weakened phase), below 50% (normal phase), below 60% (aggressive phase)."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Ma 3 fazy (normalna -> agresywna -> osłabiona) zmieniane przez sól (opóźnienie 2–3 s), spalenie krucyfiksu lub kadzidło (od razu); po zmianie fazy nie wdepnie w pozostałe kupki soli.",
+                    "en": "Has 3 phases (normal -> aggressive -> weakened) shifted by salt (2–3s delay), crucifix burn, or smudge (immediate); won't step in remaining salt piles after phase shift."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Faza agresywna: polowanie od 60% psychiki, zasięg krucyfiksu mniejszy o 2 m, ogłuszenie kadzidłem 4 s, prędkość 1,96 m/s, NIE wchodzi w sól.",
+                    "en": "Aggressive phase: hunts from 60% sanity, crucifix range reduced by 2m, smudge stun 4s, speed 1.96 m/s, does NOT step in salt."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Faza osłabiona: polowanie od 40% psychiki, zasięg krucyfiksu większy o 1 m, ogłuszenie kadzidłem 6 s, prędkość 1,36 m/s.",
+                    "en": "Weakened phase: hunts from 40% sanity, crucifix range increased by 1m, smudge stun 6s, speed 1.36 m/s."
+                }
+            ]
+        },
+        {
+            "id": "goryo",
+            "name": { "pl": "Goryo", "en": "Goryo" },
+            "forced_evidence": {
+                "pl": "Projektor D.O.T.S.",
+                "en": "D.O.T.S. Projector"
+            },
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Nigdy sam z siebie nie zmienia ulubionego pokoju (również po życzeniu o zdrowie psychiczne z małpiej łapy) i rzadko wędruje daleko od niego.",
+                    "en": "Never changes its favorite room on its own (even after wishing for sanity on Monkey Paw) and rarely roams far from it."
+                },
+                {
+                    "category": "evidence",
+                    "pl": "Projektor D.O.T.S. widoczny tylko przez kamerę; nie pojawia się na nim, gdy w pokoju ducha jest żywy gracz; wymagany dowód na wyższych poziomach trudności.",
+                    "en": "D.O.T.S. visible only through camera; does not appear on D.O.T.S. with a live player in the room; forced evidence on higher difficulties."
+                }
+            ]
+        },
+        {
+            "id": "hantu",
+            "name": { "pl": "Hantu", "en": "Hantu" },
+            "forced_evidence": {
+                "pl": "Mroźne temperatury",
+                "en": "Freezing Temperatures"
+            },
+            "evidence": [
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": 1.4,
+                "max_mps": 2.7,
+                "display": {
+                    "pl": "1,4 m/s – 2,7 m/s",
+                    "en": "1.4 m/s – 2.7 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza (LOS)",
+                    "en": "Does not speed up (LOS)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "speed",
+                    "pl": "Szybszy w chłodniejszych pomieszczeniach i wolniejszy w cieplejszych; może zmieniać prędkość w trakcie polowania.",
+                    "en": "Faster in colder rooms and slower in warmer rooms; speed can change throughout a hunt."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Widoczny mroźny oddech podczas polowań wyłącznie przy wyłączonych bezpiecznikach.",
+                    "en": "Visible freezing breath during hunts ONLY when the breaker is off."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Nigdy nie włącza bezpieczników i ma większą szansę na ich wyłączenie; mroźne temperatury wymagane jako dowód na wyższych poziomach trudności.",
+                    "en": "Never turns on the breaker and has a higher chance to turn it off; Freezing Temperatures forced on higher difficulties."
+                }
+            ]
+        },
+        {
+            "id": "jinn",
+            "name": { "pl": "Jinn", "en": "Jinn" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "EMF 5", "en": "EMF Level 5" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 2.5,
+                "display": {
+                    "pl": "1,7 m/s (standardowa) / 2,5 m/s (szybka)",
+                    "en": "1.7 m/s (standard) / 2.5 m/s (fast)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "speed",
+                    "pl": "Przy włączonych bezpiecznikach przyspiesza podczas polowania do 2,5 m/s, gdy widzi gracza dalej niż 3 m, i zwalnia do 1,7 m/s w odległości do 3 m.",
+                    "en": "With breaker on, speeds up to 2.5 m/s during a hunt when seeing a player beyond 3m and slows to 1.7 m/s within 3m."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Nigdy nie wyłącza bezpieczników (choć zbyt wiele włączonych świateł może je wybić); może obniżyć psychikę gracza o 25%, zostawiając EMF 2 lub EMF 5 na bezpiecznikach.",
+                    "en": "Never turns off the breaker (though too many lights can trip it); can drain 25% sanity, leaving EMF 2 or EMF 5 at the breaker."
+                }
+            ]
+        },
+        {
+            "id": "kormos",
+            "name": { "pl": "Kormos", "en": "Kormos" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 2.21,
+                "display": {
+                    "pl": "1,7 m/s – 2,21 m/s",
+                    "en": "1.7 m/s – 2.21 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza (LOS)",
+                    "en": "Does not speed up (LOS)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki; poniżej 70%, jeśli w pobliżu sprintuje gracz.",
+                    "en": "Below 50% sanity; below 70% if a player is sprinting nearby."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Jest ślepy, ale ma wyczulony słuch (10 m przy chodzeniu w kucaku, 15 m przy chodzeniu, 30 m przy biegu); po usłyszeniu gracza powyżej 5 m przyspiesza do 2,21 m/s i idzie w ostatnie wykryte miejsce.",
+                    "en": "Blind but relies on hearing (10m crouch-walk, 15m walk, 30m sprint); speeds up to 2.21 m/s toward last detected spot if hearing a player >5m away."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Nie wykonuje eventów z pościgiem ani z mgłą (ghost mist event).",
+                    "en": "Cannot perform chase or ghost mist events."
+                }
+            ]
+        },
+        {
+            "id": "mara",
+            "name": { "pl": "Mara", "en": "Mara" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 60% przy zgaszonym świetle; poniżej 40% przy zapalonym świetle (wg przełącznika w pokoju).",
+                    "en": "Below 60% with light off; below 40% with light on (based on room light switch)."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Unika wędrowania do pomieszczeń z zapalonym światłem; nigdy nie zapala światła; może szybko zgasić światło po zapaleniu (cooldown umiejętności 10 s); częstsze eventy psujące oświetlenie.",
+                    "en": "Avoids roaming into lit rooms; never turns lights on; can quickly turn off a light after it's turned on (10s ability cooldown); higher chance of light-breaking events."
+                }
+            ]
+        },
+        {
+            "id": "moroi",
+            "name": { "pl": "Moroi", "en": "Moroi" },
+            "forced_evidence": { "pl": "Spirit Box", "en": "Spirit Box" },
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" }
+            ],
+            "speed": {
+                "min_mps": 1.5,
+                "max_mps": 2.25,
+                "display": {
+                    "pl": "1,5 m/s – 2,25 m/s",
+                    "en": "1.5 m/s – 2.25 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Nakłada klątwę po odpowiedzi na Spirit Boxie lub mikrofonie parabolicznym, przyspieszając utratę psychiki 2x aż do użycia przedmiotu leczącego psychikę; wymagany Spirit Box na wyższych poziomach trudności.",
+                    "en": "Curses players upon Spirit Box or parabolic mic response, doubling sanity drain until sanity restoration is used; Spirit Box forced on higher difficulties."
+                },
+                {
+                    "category": "speed",
+                    "pl": "Wolniejszy przy wyższej psychice, szybszy przy niższej; czas ogłuszenia kadzidłem dłuższy o 50% (7 s zamiast 5 s).",
+                    "en": "Slower at higher sanity, faster at lower sanity; smudge stun duration is 50% longer (7s instead of 5s)."
+                }
+            ]
+        },
+        {
+            "id": "myling",
+            "name": { "pl": "Myling", "en": "Myling" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Dźwięki i kroki słychać dopiero z odległości do 12 m (zamiast standardowych 20 m).",
+                    "en": "Sounds and footsteps are audible only within 12m (instead of the standard 20m)."
+                },
+                {
+                    "category": "evidence",
+                    "pl": "Częstsze dźwięki na mikrofonie parabolicznym (może wygenerować dźwięk wcześniej niż po standardowym odstępie 80 s).",
+                    "en": "More frequent parabolic mic sounds (can produce sound earlier than the standard 80s interval)."
+                }
+            ]
+        },
+        {
+            "id": "obake",
+            "name": { "pl": "Obake", "en": "Obake" },
+            "forced_evidence": { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+            "evidence": [
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "evidence",
+                    "pl": "Specjalne ślady UV (sześciopalczasty odcisk dłoni, 2 odciski na przełączniku światła, 5 odcisków na kratach/klawiaturze), 25% szansy na brak śladu UV po interakcji, zdolność skracania czasu śladów UV o połowę; Ultrafiolet wymagany na wyższych poziomach trudności.",
+                    "en": "Special UV prints (six-fingered handprint, 2 prints on light switch, 5 prints on jail bars/keypads), 25% chance of no UV print on interaction, ability halving UV duration; Ultraviolet forced on higher difficulties."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Zmienia model ducha podczas polowania na konkretnych mrugnięciach (12, 27, 39, 54, 62, 80, 105, 120).",
+                    "en": "Shapeshifts ghost model during hunts on specific blinks (12, 27, 39, 54, 62, 80, 105, 120)."
+                }
+            ]
+        },
+        {
+            "id": "obambo",
+            "name": { "pl": "Obambo", "en": "Obambo" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" }
+            ],
+            "speed": {
+                "min_mps": 1.45,
+                "max_mps": 1.96,
+                "display": {
+                    "pl": "1,45 m/s – 1,96 m/s",
+                    "en": "1.45 m/s – 1.96 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 10% w fazie spokojnej; poniżej 65% w fazie agresywnej.",
+                    "en": "Below 10% in calm phase; below 65% in aggressive phase."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": {
+                "pl": "Często 50/50 z The Twins po jednym polowaniu, chyba że zmieni fazę w trakcie polowania.",
+                "en": "Often a 50/50 with The Twins after one hunt unless it switches phase mid-hunt."
+            },
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Przełącza się między fazą spokojną (1,45 m/s) a agresywną (1,96 m/s) — pierwsza zmiana po 1 min od otwarcia drzwi wejściowych, potem co 2 minuty; może zmienić fazę w trakcie polowania.",
+                    "en": "Alternates between calm (1.45 m/s) and aggressive (1.96 m/s) phases — first shift after 1m from opening entrance door, then every 2m; can shift mid-hunt."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Polowanie w fazie agresywnej jest krótsze o 20%.",
+                    "en": "Hunts in aggressive phase are 20% shorter."
+                }
+            ]
+        },
+        {
+            "id": "oni",
+            "name": { "pl": "Oni", "en": "Oni" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Zabiera 20% psychiki (zamiast 10%) przy kontakcie w evencie, nigdy nie robi eventu z mgłą (obłok/dmuchnięcie), bardzo aktywny blisko graczy, częściej przyjmuje pełny model podczas eventów.",
+                    "en": "Drains 20% sanity (instead of 10%) on event contact, never does ghost mist events, very active near players, higher chance of full ghost model in events."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Często mruga podczas polowania — jest bardzo dobrze widoczny.",
+                    "en": "Short blink intervals during hunts — stays visible longer."
+                }
+            ]
+        },
+        {
+            "id": "onryo",
+            "name": { "pl": "Onryo", "en": "Onryo" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 60,
+                "notes": {
+                    "pl": "Poniżej 60% psychiki; może spróbować polowania na dowolnym poziomie po każdej 3. zgaszonej świeczce.",
+                    "en": "Below 60% sanity; can attempt a hunt at any sanity after every 3rd extinguished flame."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Świeczka/zapalniczka działa jak krucyfiks z wyższym priorytetem (zasięg płomienia ok. 2 m); próba polowania następuje po każdej 3. zgaszonej świeczce.",
+                    "en": "Candles/lighters act like a crucifix with higher priority (~2m radius); hunt attempt triggers after every 3rd extinguished flame."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Nie zapala świeczek/ogniska; większa szansa na zgaszenie płomienia wraz ze wzrostem liczby martwych graczy; może zgasić tę samą świeczkę dwa razy w mniej niż 20 s przy kolejnym płomieniu w zasięgu.",
+                    "en": "Cannot light candles/campfires; higher flame-extinguish chance as players die; can extinguish the same candle twice within <20s if another flame is in range."
+                }
+            ]
+        },
+        {
+            "id": "phantom",
+            "name": { "pl": "Phantom", "en": "Phantom" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Znika po zrobieniu zdjęcia (także na D.O.T.S.), nie widać go na zdjęciu w dzienniku; traci się 0,5%/s psychiki patrząc na niego w zasięgu bicia serca; może wędrować do losowego gracza, zostawiając EMF 2.",
+                    "en": "Disappears when photographed (including on D.O.T.S.) and isn't visible on the journal photo; drains 0.5%/s sanity when looking at it within heartbeat range; can roam to a random player leaving EMF 2."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Rzadko mruga podczas polowania — słabiej widoczny.",
+                    "en": "Longer blink intervals during hunts — less visible."
+                }
+            ]
+        },
+        {
+            "id": "poltergeist",
+            "name": { "pl": "Poltergeist", "en": "Poltergeist" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Częściej wchodzi w interakcję z przedmiotami, rzuca mocno i daleko; polter-bomba wyrzuca naraz wiele przedmiotów, odbierając 2% psychiki za każdy przedmiot.",
+                    "en": "Higher item interaction rate, throws forcefully and far; polter-bomb flings multiple items at once, draining 2% sanity per item."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Podczas polowania ma 100% szansy na rzucanie przedmiotami co 0,5 s z dużą siłą.",
+                    "en": "During hunts has a 100% chance to throw items every 0.5s with strong force."
+                }
+            ]
+        },
+        {
+            "id": "raiju",
+            "name": { "pl": "Raiju", "en": "Raiju" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 2.5,
+                "display": {
+                    "pl": "1,7 m/s (standardowa) / 2,5 m/s (przy elektronice)",
+                    "en": "1.7 m/s (standard) / 2.5 m/s (near electronics)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": {
+                    "pl": "Przyśpiesza (LOS) bez elektroniki w pobliżu",
+                    "en": "Speeds up (LOS) when no electronics are nearby"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki; poniżej 65% w pobliżu włączonych urządzeń elektronicznych.",
+                    "en": "Below 50% sanity; below 65% near active electronic equipment."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "speed",
+                    "pl": "Osiąga 2,5 m/s w zasięgu włączonej elektroniki; zakłóca elektronikę z 15 m (zamiast 10 m).",
+                    "en": "Reaches 2.5 m/s near active electronics; disrupts electronics from 15m (instead of 10m)."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Bardzo głośne bicie serca (aż do przesterów), gdy gracz stoi blisko ducha.",
+                    "en": "Very loud heartbeat (even clipping) when a player is close to the ghost."
+                }
+            ]
+        },
+        {
+            "id": "revenant",
+            "name": { "pl": "Upiór", "en": "Revenant" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.0,
+                "max_mps": 3.0,
+                "display": {
+                    "pl": "1,0 m/s (wolna) / 3,0 m/s (szybka)",
+                    "en": "1.0 m/s (slow) / 3.0 m/s (fast)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza (LOS)",
+                    "en": "Does not speed up (LOS)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Porusza się bardzo wolno (1,0 m/s) do momentu wykrycia gracza (głos, elektronika, wzrok), po czym przyspiesza do 3,0 m/s aż do dotarcia do ostatniego miejsca wykrycia.",
+                    "en": "Moves slowly (1.0 m/s) until detecting a player (voice, electronics, sight), then accelerates to 3.0 m/s until reaching the last detected location."
+                }
+            ]
+        },
+        {
+            "id": "shade",
+            "name": { "pl": "Ułuda", "en": "Shade" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 35,
+                "notes": {
+                    "pl": "Poniżej 35% psychiki.",
+                    "en": "Below 35% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Nie rozpocznie polowania w pokoju, w którym jest gracz; nie gasi świeczki w pobliżu gracza podczas polowania.",
+                    "en": "Will not start a hunt in the same room as a player; cannot extinguish a candle near a player during a hunt."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Nie robi eventów ani interakcji w pokoju z graczem (chyba że przez ścianę z innego pokoju); nie robi śpiewającego eventu ani na 100% psychiki; może pojawić się jako cień na pentagramie, pozytywce lub małpiej łapie.",
+                    "en": "No events or interactions in a player's room (except through walls from another room); no singing event or event at 100% sanity; can appear as a shadow on Summoning Circle, Music Box, or Monkey Paw."
+                }
+            ]
+        },
+        {
+            "id": "thaye",
+            "name": { "pl": "Thaye", "en": "Thaye" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.0,
+                "max_mps": 2.75,
+                "display": {
+                    "pl": "1,0 m/s – 2,75 m/s",
+                    "en": "1.0 m/s – 2.75 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza (LOS)",
+                    "en": "Does not speed up (LOS)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 75,
+                "notes": {
+                    "pl": "Od 75% psychiki (wiek 0) do 15% (wiek +10), maleje o -6% na każdy etap starzenia.",
+                    "en": "From 75% sanity (age 0) down to 15% (age +10), decreasing by -6% per aging stage."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Starzeje się z czasem (11 poziomów wieku / maks. 10 postarzeń), co widać też na tablicy Ouija; im młodszy, tym bardziej aktywny.",
+                    "en": "Ages over time (11 age stages / max 10 age increases), reflected on Ouija Board age answers; more active when young."
+                },
+                {
+                    "category": "speed",
+                    "pl": "Wraz ze starzeniem maleje prędkość (od 2,75 m/s do 1,0 m/s), aktywność oraz próg psychiki polowania.",
+                    "en": "As it ages, speed (from 2.75 m/s to 1.0 m/s), activity, and hunt sanity threshold all decrease."
+                }
+            ]
+        },
+        {
+            "id": "the_mimic",
+            "name": { "pl": "The Mimic", "en": "The Mimic" },
+            "forced_evidence": { "pl": "Widmowe kule", "en": "Ghost Orb" },
+            "evidence": [
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": null,
+                "max_mps": null,
+                "display": {
+                    "pl": "Zależy od naśladowanego ducha",
+                    "en": "Depends on mimicked ghost"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": null,
+                "label": {
+                    "pl": "Zależy od naśladowanego ducha",
+                    "en": "Depends on mimicked ghost"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": null,
+                "notes": {
+                    "pl": "Zależy od naśladowanego ducha.",
+                    "en": "Depends on mimicked ghost."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": {
+                "pl": "Trudno ocenić w pojedynczym polowaniu; łatwiej, gdy zachowanie zmienia się między polowaniami lub gdy występują widmowe kule.",
+                "en": "Hard to tell in a single hunt; easier if behavior shifts between hunts or when Ghost Orbs are present."
+            },
+            "special_traits": [
+                {
+                    "category": "evidence",
+                    "pl": "Zawsze generuje widmowe kule jako swoją umiejętność (nawet przy 0 dowodów).",
+                    "en": "Always displays Ghost Orbs as an ability (even on 0 evidence runs)."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Naśladuje zachowania/umiejętności innych duchów (szybkość, mruganie, zdolności), zmieniając naśladowany typ co 30 s – 2 min.",
+                    "en": "Mimics other ghosts' behaviors/traits (speed, blinks, abilities), switching mimicked ghost every 30s – 2m."
+                }
+            ]
+        },
+        {
+            "id": "the_twins",
+            "name": { "pl": "Bliźnięta", "en": "The Twins" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.5,
+                "max_mps": 1.9,
+                "display": {
+                    "pl": "1,5 m/s (wolniejsza) lub 1,9 m/s (szybsza)",
+                    "en": "1.5 m/s (slower) or 1.9 m/s (faster)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Może wykonać dwie interakcje naraz (w zasięgu 3 m oraz 16 m); sól, czujnik ruchu i Spirit Box działają tylko w fizycznej lokacji ducha.",
+                    "en": "Can perform two interactions simultaneously (within 3m and 16m); salt, motion sensors, and Spirit Box only trigger at the ghost's physical location."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Może zacząć polowanie z innego pokoju niż ulubiony pokój oraz w zasięgu krucyfiksu.",
+                    "en": "Can start a hunt from outside its favorite room and within crucifix range."
+                }
+            ]
+        },
+        {
+            "id": "wraith",
+            "name": { "pl": "Widmo", "en": "Wraith" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "EMF 5", "en": "EMF Level 5" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Nigdy nie wdepnie w sól (więc nie spowalnia go sól na 3. poziomie); może teleportować się do losowego gracza, zostawiając EMF 2 lub EMF 5 w docelowym miejscu.",
+                    "en": "Never steps in salt (so Tier 3 salt never slows it); can teleport to a random player, leaving EMF 2 or EMF 5 at the destination."
+                }
+            ]
+        },
+        {
+            "id": "yokai",
+            "name": { "pl": "Yokai", "en": "Yokai" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki; poniżej 80%, gdy w pobliżu rozmawiają gracze.",
+                    "en": "Below 50% sanity; below 80% when players talk nearby."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Wykrywa głos i elektronikę gracza z odległości do 2,5 m (zamiast 9 m i 7,5 m).",
+                    "en": "Detects player voice and electronics from 2.5m (instead of 9m and 7.5m)."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Większa aktywność gdy gracze rozmawiają w pobliżu; po użyciu pozytywki pojawia się dopiero w odległości do 2,5 m (zamiast 5 m).",
+                    "en": "More active when players talk nearby; appears within 2.5m (instead of 5m) after using the Music Box."
+                }
+            ]
+        },
+        {
+            "id": "yurei",
+            "name": { "pl": "Yurei", "en": "Yurei" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "behavior",
+                    "pl": "Jedyny duch wchodzący w interakcję z drzwiami głównymi poza eventem i polowaniem; może trzasnąć drzwiami i zabrać 15% psychiki; drzwi rusza zawsze w pełni (otwiera lub zamyka).",
+                    "en": "Only ghost interacting with the front door outside events and hunts; can slam a door for 15% sanity drain; always moves doors fully open or closed."
+                },
+                {
+                    "category": "smudge",
+                    "pl": "Po użyciu kadzidła nie może opuszczać swojego pokoju przez 90 s / 1,5 min.",
+                    "en": "Cannot leave its room for 90s / 1.5 min after smudging."
+                }
+            ]
+        }
+    ],
+    "ghost_tests": [
+        {
+            "ghost_id": "aswang",
+            "name": { "pl": "Aswang", "en": "Aswang" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Sprawdź prędkość — przypomina prędkość Bliźniąt, ale szybciej się rozpędza.",
+                    "en": "Check speed — resembles The Twins' speed, but ramps up faster."
+                },
+                {
+                    "pl": "Jeśli ustawienia gry na to pozwalają i wykluczysz wolniejsze duchy, sprawdź, czy kończy polowanie po wejściu do kryjówki.",
+                    "en": "If custom settings allow and slower ghosts are ruled out, test whether entering a hiding spot ends the hunt."
+                }
+            ]
+        },
+        {
+            "ghost_id": "banshee",
+            "name": { "pl": "Zmora", "en": "Banshee" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Nasłuchuj na mikrofonie parabolicznym unikalnego krzyku — 4 zwykłe odpowiedzi z rzędu dają ok. 80% szansy na wykluczenie (chyba że masz pecha).",
+                    "en": "Listen on a parabolic mic for the unique wail — 4 standard responses in a row gives ~80% confidence to rule it out (barring bad luck)."
+                },
+                {
+                    "pl": "W trybie wieloosobowym sprawdź, czy podczas polowania ściga tylko jeden cel.",
+                    "en": "In multiplayer, test whether it chases only a single target during hunts."
+                },
+                {
+                    "pl": "Sprawdź płeć ducha (model i imię) — Banshee może być wyłącznie kobietą.",
+                    "en": "Check ghost gender (model and name) — Banshee can only be female."
+                }
+            ]
+        },
+        {
+            "ghost_id": "dayan",
+            "name": { "pl": "Dayan", "en": "Dayan" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Zwab ducha do siebie i przetestuj reakcję na ruch: natychmiastowe spowolnienie w bezruchu oraz przyspieszenie po ruszeniu wskazuje na Dayana.",
+                    "en": "Lure the ghost and test movement reaction: slowing immediately when standing still and speeding up when moving points to Dayan."
+                },
+                {
+                    "pl": "Sprawdź płeć ducha (model i imię) — Dayan może być wyłącznie kobietą.",
+                    "en": "Check ghost gender (model and name) — Dayan can only be female."
+                }
+            ]
+        },
+        {
+            "ghost_id": "deogen",
+            "name": { "pl": "Deogen", "en": "Deogen" },
+            "has_dedicated_test": false,
+            "steps": [
+                {
+                    "pl": "Brak osobnego testu; podczas polowania szybko dobiega do gracza i zwalnia blisko niego, jest też nieco bardziej widoczny niż standardowy duch.",
+                    "en": "No dedicated test; during a hunt it rushes quickly to the player and slows down nearby, with slightly higher visibility than standard ghosts."
+                }
+            ]
+        },
+        {
+            "ghost_id": "demon",
+            "name": { "pl": "Demon", "en": "Demon" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Po spaleniu kadzidła włącz stoper — polowanie już po 1 minucie sugeruje Demona (brak polowania po 1 minucie nie wyklucza go całkowicie).",
+                    "en": "Start a timer after smudging — a hunt after 1 minute points to Demon (not hunting at 1 minute doesn't completely rule it out)."
+                },
+                {
+                    "pl": "Zmierz stoperem odstęp między polowaniami — odstęp 20 s wskazuje na Demona.",
+                    "en": "Time the cooldown between hunts — a 20s gap points to Demon."
+                }
+            ]
+        },
+        {
+            "ghost_id": "phantom",
+            "name": { "pl": "Phantom", "en": "Phantom" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Rzadko mruga podczas polowania (dłużej znika, co utrudnia namierzenie).",
+                    "en": "Has long blink intervals during hunts (stays invisible longer, making it harder to track)."
+                },
+                {
+                    "pl": "Znika po zrobieniu zdjęcia.",
+                    "en": "Disappears when photographed."
+                }
+            ]
+        },
+        {
+            "ghost_id": "gallu",
+            "name": { "pl": "Gallu", "en": "Gallu" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Rozsyp sól w większych odstępach na trasie ducha — wejście tylko w pierwszą kupkę (bez kolejnych) oraz wyraźne przyspieszenie wskazują na Gallu.",
+                    "en": "Place salt piles spaced apart along the ghost's path — stepping in only the first pile (skipping the rest) plus a noticeable speed boost points to Gallu."
+                }
+            ]
+        },
+        {
+            "ghost_id": "goryo",
+            "name": { "pl": "Goryo", "en": "Goryo" },
+            "has_dedicated_test": false,
+            "steps": [
+                {
+                    "pl": "Brak prostego testu; przy wysokim roamingu i zmianie ulubionego pokoju w ustawieniach stałe polowanie z tego samego pokoju i brak cech innych duchów sugeruje Goryo.",
+                    "en": "No standalone test; with high roaming and favorite room changes in settings, consistently hunting from the same room without other ghost traits points to Goryo."
+                }
+            ]
+        },
+        {
+            "ghost_id": "hantu",
+            "name": { "pl": "Hantu", "en": "Hantu" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Wyłącz bezpieczniki i sprawdź, czy podczas polowania widać mroźny oddech z ust ducha.",
+                    "en": "Turn off the breaker and check for visible freezing breath during hunts."
+                },
+                {
+                    "pl": "Nie przyspiesza na linii wzroku (LOS), a jego prędkość zależy od temperatury (szybszy w chłodzie, wolniejszy w cieple).",
+                    "en": "Does not gain LOS speed, and its speed depends on temperature (faster in cold rooms, slower in warm rooms)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "jinn",
+            "name": { "pl": "Jinn", "en": "Jinn" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Przy włączonych bezpiecznikach sprawdź, czy przyspiesza z daleka po zauważeniu gracza.",
+                    "en": "With the breaker on, check if it speeds up from afar upon spotting a player."
+                },
+                {
+                    "pl": "Nigdy nie wyłącza bezpieczników (nie działa do rozpoznania, jeśli w ustawieniach bezpieczniki są zniszczone).",
+                    "en": "Never turns off the breaker (untestable if the breaker is broken in custom settings)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "kormos",
+            "name": { "pl": "Kormos", "en": "Kormos" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Pokaż się duchowi z dystansu bez ruchu i sprawdź, czy zignoruje brak dźwięku.",
+                    "en": "Show yourself at a distance without moving and see if it ignores you without sound."
+                },
+                {
+                    "pl": "Schowaj się i zacznij sprintować lub chodzić w miejscu bez włączonej elektroniki — przyjście ducha wskazuje na Kormosa.",
+                    "en": "Hide and sprint or walk in place with no active electronics — the ghost coming to you points to Kormos."
+                },
+                {
+                    "pl": "Nigdy nie wykonuje eventów z pościgiem ani z mgłą (obłok/dmuchnięcie).",
+                    "en": "Never performs chase or ghost mist events."
+                }
+            ]
+        },
+        {
+            "ghost_id": "mara",
+            "name": { "pl": "Mara", "en": "Mara" },
+            "has_dedicated_test": false,
+            "steps": [
+                {
+                    "pl": "Brak pewnego testu; możesz co 10 s sprawdzać w pokoju ducha, czy natychmiast gasi zapalone światło (o ile żarówka nie wybuchła podczas eventu).",
+                    "en": "No reliable test; you can check every 10s in the ghost room whether it immediately turns off a light you turn on (unless the bulb broke during an event)."
+                },
+                {
+                    "pl": "Nigdy nie zapala światła.",
+                    "en": "Never turns lights on."
+                }
+            ]
+        },
+        {
+            "ghost_id": "the_mimic",
+            "name": { "pl": "The Mimic", "en": "The Mimic" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Sprawdź, czy występują widmowe kule.",
+                    "en": "Check for Ghost Orbs."
+                }
+            ]
+        },
+        {
+            "ghost_id": "moroi",
+            "name": { "pl": "Moroi", "en": "Moroi" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Sprawdź, czy przyspiesza wraz z czasem na linii wzroku (LOS) podczas pościgu.",
+                    "en": "Check whether it accelerates over time via line of sight (LOS) while chasing."
+                },
+                {
+                    "pl": "Ogłuszenie kadzidłem trwa 7 s zamiast 5 s; prędkość rośnie wraz ze spadkiem psychiki (od najwolniejszej przy wysokiej do najszybszej przy niskiej).",
+                    "en": "Smudge stun lasts 7s instead of 5s; speed scales up as sanity drops (slowest at high sanity, fastest at low sanity)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "myling",
+            "name": { "pl": "Myling", "en": "Myling" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Połóż pod nogami włączoną latarkę lub EMF — jeśli zakłócenia pojawiają się jednocześnie z momentem, gdy słyszysz kroki/dźwięki ducha, to Myling (tzw. „budyniowe kroki”).",
+                    "en": "Drop a powered flashlight or EMF at your feet — if interference starts at the exact moment you hear the ghost, it's a Myling (muffled footsteps)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "obake",
+            "name": { "pl": "Obake", "en": "Obake" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Obserwuj ducha podczas polowania, czy zmienia model ducha.",
+                    "en": "Watch the ghost during a hunt to see if it changes its ghost model."
+                }
+            ]
+        },
+        {
+            "ghost_id": "obambo",
+            "name": { "pl": "Obambo", "en": "Obambo" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Porównaj prędkość z Bliźniętami względem czasu widocznego na monitorze w ciężarówce lub kamerze oraz sprawdź, czy nagle nie zmienia prędkości w trakcie polowania przy zmianie fazy.",
+                    "en": "Compare speed against The Twins using the timer on the van monitor or camera, and listen for sudden speed shifts mid-hunt when changing phase."
+                }
+            ]
+        },
+        {
+            "ghost_id": "oni",
+            "name": { "pl": "Oni", "en": "Oni" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Krótkie i częste mruganie podczas polowania — duch jest bardzo dobrze widoczny niemal cały czas.",
+                    "en": "Short, frequent blinks during hunts — stays clearly visible almost continuously."
+                },
+                {
+                    "pl": "Nigdy nie wykonuje eventu z obłokiem (air ball / ghost mist).",
+                    "en": "Never performs a ghost mist event."
+                }
+            ]
+        },
+        {
+            "ghost_id": "onryo",
+            "name": { "pl": "Onryo", "en": "Onryo" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Obłóż obszar świeczkami lub postaw zapaloną świeczkę na krucyfiksie (tier 1 lub 2) — spalenie krucyfiksu przy palącej się świeczce wyklucza Onryo.",
+                    "en": "Surround the area with candles or place a lit candle on a Tier 1 or Tier 2 crucifix — burning the crucifix while the candle stays lit rules out Onryo."
+                },
+                {
+                    "pl": "Próbuje rozpocząć polowanie po każdej 3. zgaszonej świeczce/zapalniczce i nigdy nie zapala świeczki ani ogniska.",
+                    "en": "Attempts a hunt after every 3rd extinguished candle/lighter and never lights candles or campfires."
+                }
+            ]
+        },
+        {
+            "ghost_id": "poltergeist",
+            "name": { "pl": "Poltergeist", "en": "Poltergeist" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Zrób kupkę przedmiotów w pokoju ducha — wyrzucenie kilku naraz wskazuje na Poltergeista.",
+                    "en": "Pile up items in the ghost room — flinging multiple items at once points to Poltergeist."
+                },
+                {
+                    "pl": "Podczas polowania wrzuć przedmioty na stół/ławkę wokół której się ganiasz — częste, mocne wyrzucanie („czyszczenie stołu”) wskazuje na Poltergeista.",
+                    "en": "During a hunt, toss items onto a table/bench you loop around — rapid, strong throws ('clearing the table') point to Poltergeist."
+                }
+            ]
+        },
+        {
+            "ghost_id": "raiju",
+            "name": { "pl": "Raiju", "en": "Raiju" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Zostaw włączoną elektronikę na trasie ducha — natychmiastowe przyspieszenie po wejściu w jej zasięg wskazuje na Raiju (dla pewności sprawdź też przy wyłączonej elektronice; nie ma dodatkowego bonusu LOS przy elektronice).",
+                    "en": "Leave active electronics along the ghost's path — an immediate speed boost upon entering range points to Raiju (verify with electronics off; no extra LOS bonus near electronics)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "revenant",
+            "name": { "pl": "Revenant", "en": "Revenant" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Schowaj się na początku polowania i sprawdź, czy jest wolny oraz czy gwałtownie przyspiesza po wykryciu gracza.",
+                    "en": "Hide at the start of a hunt and listen to check if it is slow and suddenly speeds up upon detecting a player."
+                },
+                {
+                    "pl": "Możesz sprawdzić spowolnienie po użyciu kadzidła (tylko tier 1).",
+                    "en": "You can check slow movement after smudging (Tier 1 only)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "shade",
+            "name": { "pl": "Shade", "en": "Shade" },
+            "has_dedicated_test": false,
+            "steps": [
+                {
+                    "pl": "Brak prostego testu; przebywanie w pokoju ducha ogranicza jego aktywność i polowania w tym pokoju.",
+                    "en": "No direct test; staying in the ghost room suppresses activity and hunts in that room."
+                },
+                {
+                    "pl": "Nie gasi świeczki na polowaniu w pobliżu gracza (w tym samym pokoju), nie robi śpiewającego eventu i nie rzuca agresywnie przedmiotem bezpośrednio w gracza.",
+                    "en": "Does not blow out a candle during a hunt near a player (same room), does not do singing events, and does not aggressively throw an item directly at a player."
+                }
+            ]
+        },
+        {
+            "ghost_id": "spirit",
+            "name": { "pl": "Widziadło", "en": "Spirit" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Po spaleniu kadzidła włącz stoper — polowanie dopiero po 3 minutach sugeruje Spirita (brak polowania po 3 minutach nie wyklucza go ze stuprocentową pewnością).",
+                    "en": "Start a timer after smudging — a hunt only after 3 minutes points to Spirit (not hunting right at 3 minutes isn't guaranteed)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "thaye",
+            "name": { "pl": "Thaye", "en": "Thaye" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Sprawdź, czy przyspiesza wraz z czasem na linii wzroku (LOS) — brak przyspieszenia LOS wskazuje na Thaye.",
+                    "en": "Check whether it accelerates over time via line of sight (LOS) — no LOS speed gain points to Thaye."
+                },
+                {
+                    "pl": "Aby odróżnić od Revenanta, użyj kadzidła (tier 1) na polowaniu i sprawdź spowolnienie lub oceń prędkość na starcie polowania bez wykrycia gracza.",
+                    "en": "To distinguish from Revenant, smudge (Tier 1) during a hunt to check slowness or judge start-of-hunt speed without player detection."
+                }
+            ]
+        },
+        {
+            "ghost_id": "the_twins",
+            "name": { "pl": "Bliźnięta", "en": "The Twins" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Nasłuchuj prędkości podczas polowań — lekko wolniejsza lub lekko szybsza od standardowej (oraz zmiana między polowaniami) wskazuje na Bliźnięta.",
+                    "en": "Listen to hunt speed — slightly slower or slightly faster than standard (or shifting between hunts) points to The Twins."
+                },
+                {
+                    "pl": "Rozpoczęcie polowania w zasięgu krucyfiksu jednoznacznie wskazuje na Bliźnięta.",
+                    "en": "Starting a hunt within crucifix range conclusively identifies The Twins."
+                }
+            ]
+        },
+        {
+            "ghost_id": "wraith",
+            "name": { "pl": "Widmo", "en": "Wraith" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Rozsyp sól na trasie ducha — brak śladów w soli wskazuje na Widmo.",
+                    "en": "Place salt along the ghost's path — never stepping in salt points to Wraith."
+                },
+                {
+                    "pl": "Może teleportować się do gracza, zostawiając EMF 2.",
+                    "en": "Can teleport to a player, leaving EMF 2."
+                }
+            ]
+        },
+        {
+            "ghost_id": "yokai",
+            "name": { "pl": "Yokai", "en": "Yokai" },
+            "has_dedicated_test": true,
+            "steps": [
+                {
+                    "pl": "Schowaj się poza polem widzenia ducha i mów w grze lub trzymaj włączoną elektronikę (np. wciśnięty przycisk radia) — brak reakcji przy bliskim przejściu ducha wskazuje na Yokai (wykrywa z 2,5 m).",
+                    "en": "Hide out of line of sight and talk or hold active electronics (including push-to-talk) — no detection when passing close points to Yokai (2.5m detection range)."
+                }
+            ]
+        },
+        {
+            "ghost_id": "yurei",
+            "name": { "pl": "Yurei", "en": "Yurei" },
+            "has_dedicated_test": false,
+            "steps": [
+                {
+                    "pl": "Brak pewnego testu; zwróć uwagę na trzaskanie drzwiami i interakcje z drzwiami wejściowymi.",
+                    "en": "No reliable test; watch for door slams and front door interactions."
+                },
+                {
+                    "pl": "Drzwi rusza wyłącznie w pełni (otwiera lub zamyka) — delikatne uchylenie/dotknięcie drzwi wyklucza Yurei.",
+                    "en": "Moves doors only fully open or closed — a slight door touch/nudge rules out Yurei."
+                }
+            ]
+        }
+    ],
+    "cursed_items": [
+        {
+            "id": "music_box",
+            "name": { "pl": "Pozytywka", "en": "Music Box" },
+            "summary": {
+                "pl": "Ułatwia odnalezienie ducha oraz zrobienie mu zdjęcia.",
+                "en": "Helps locate the ghost and take a photo of it."
+            },
+            "uses_per_contract": 1,
+            "mechanics": [
+                {
+                    "pl": "Po aktywacji zaczyna grać melodia; duch w zasięgu 20 m zaczyna śpiewać, zdradzając lokalizację (pozostaje niewidzialny, słychać go tylko dźwiękowo).",
+                    "en": "Once activated, music plays; a ghost within 20m starts singing and reveals its location (stays invisible, audio only)."
+                },
+                {
+                    "pl": "Duch manifestuje się dopiero w odległości 5 m od pozytywki (2,5 m dla Yokai) i idzie w jej stronę — liczy się to jako ghost event i można zrobić zdjęcie.",
+                    "en": "The ghost manifests within 5m of the music box (2.5m for Yokai) and walks toward it — counts as a ghost event for photo taking."
+                },
+                {
+                    "pl": "Pobiera 2,6% psychiki na sekundę każdemu w zasięgu 3 m; pełna melodia przy ciągłym staniu obok zabiera łącznie 77% psychiki.",
+                    "en": "Drains 2.6% sanity per second to anyone within 3m; playing the full song while standing next to it drains 77% sanity total."
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Zamanifestowany duch podąża za pozytywką przez 5 s.",
+                    "en": "A manifested ghost follows the music box for 5s."
+                },
+                {
+                    "pl": "Gracz wyrzuci pozytywkę z rąk (np. klawiszem G lub zmieniając slot ekwipunku).",
+                    "en": "Player drops/throws the music box (e.g. via G key or switching equipment slots)."
+                },
+                {
+                    "pl": "Duch dojdzie do pozytywki (leżącej na ziemi lub trzymanej przez gracza).",
+                    "en": "The ghost reaches the music box (on the ground or held by a player)."
+                },
+                {
+                    "pl": "Graczowi skończy się psychika lub ma 0% psychiki (pozytywka zamyka się od razu).",
+                    "en": "Player runs out of sanity or has 0% sanity (music box closes immediately)."
+                }
+            ]
+        },
+        {
+            "id": "monkey_paw",
+            "name": { "pl": "Małpia Łapa", "en": "Monkey Paw" },
+            "summary": {
+                "pl": "Służy do wypowiadania życzeń podzielonych na 3 kategorie, z których każde ma określony efekt i konsekwencje.",
+                "en": "Used to make wishes across 3 categories, each with distinct effects and consequences."
+            },
+            "wish_limits_by_multiplier": [
+                {
+                    "multiplier": "0x",
+                    "wishes": 5,
+                    "notes": { "pl": "5 życzeń", "en": "5 wishes" }
+                },
+                {
+                    "multiplier": "2x",
+                    "wishes": 4,
+                    "notes": { "pl": "4 życzenia", "en": "4 wishes" }
+                },
+                {
+                    "multiplier": "3x+",
+                    "wishes": 3,
+                    "notes": {
+                        "pl": "3 życzenia (nie dotyczy Obłędu — na Obłędzie brak przeklętych przedmiotów).",
+                        "en": "3 wishes (excludes Insanity — no cursed items on Insanity)."
+                    }
+                }
+            ],
+            "general_rules": [
+                {
+                    "pl": "Każde życzenie można wykorzystać tylko raz w trakcie kontraktu.",
+                    "en": "Each wish can be used only once per contract."
+                }
+            ],
+            "wish_categories": [
+                {
+                    "category": "ghost",
+                    "label": { "pl": "Duch", "en": "Ghost" },
+                    "wishes": [
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym zobaczyć ducha",
+                                "en": "I wish to see the ghost"
+                            },
+                            "effect": {
+                                "pl": "Duch pojawia się na 5-sekundowy event, po czym rozpoczyna przeklęte polowanie, a wypowiadający życzenie otrzymuje efekt ciemnej mgły na czas polowania.",
+                                "en": "Ghost appears for a 5s event, then starts a cursed hunt while the wisher gets a dark fog effect for the hunt."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym aktywności ducha",
+                                "en": "I wish for ghost activity"
+                            },
+                            "effect": {
+                                "pl": "Podwaja aktywność ducha na 2 minuty, zamyka drzwi wejściowe na te 2 minuty i niszczy bezpieczniki do końca gry.",
+                                "en": "Doubles ghost activity for 2 minutes, locks front doors during those 2 minutes, and breaks the fuse box/breaker for the rest of the game."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym uwięzić ducha",
+                                "en": "I wish to trap the ghost"
+                            },
+                            "effect": {
+                                "pl": "Teleportuje ducha do ulubionego pokoju i zamyka go na 1 min (blokując polowania, zdolności i roaming), zamyka drzwi połączone z pokojem ducha oraz z pokojem gracza (w tym drzwi wejściowe, jeśli jest obok), po czym po 1 min zaczyna polowanie i odblokowuje drzwi; na drzwiach pojawia się kłódka aż do otwarcia.",
+                                "en": "Teleports ghost to its favorite room and traps it for 1 min (blocking hunts, abilities, roaming), closes doors connected to ghost room and player room (including front door if near), then starts a hunt after 1 min and unlocks doors; padlock icon appears until opened."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "category": "player",
+                    "label": { "pl": "Gracz", "en": "Player" },
+                    "wishes": [
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym mieć zdrowszą psychikę",
+                                "en": "I wish for sanity"
+                            },
+                            "effect": {
+                                "pl": "Ustawia psychikę wszystkich graczy na 50%, zwiększa pasywny spadek psychiki 1,5x do końca gry i losowo zmienia ulubiony pokój ducha (także u Goryo).",
+                                "en": "Sets all players' sanity to 50%, increases passive sanity drain 1.5x for the rest of the game, and randomly changes the ghost's favorite room (including Goryo)."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym być bezpieczny",
+                                "en": "I wish to be safe"
+                            },
+                            "effect": {
+                                "pl": "Odblokowuje najbliższą kryjówkę, psuje oświetlenie w pokoju używającego do końca gry, a duch może wykryć gracza z każdego miejsca na mapie i między piętrami (głos, elektronika).",
+                                "en": "Unblocks the nearest hiding spot, breaks lighting in the wisher's room for the rest of the game, and lets the ghost detect the wisher anywhere on the map and across floors (voice, electronics)."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym opuścić to miejsce",
+                                "en": "I wish to leave"
+                            },
+                            "effect": {
+                                "pl": "Otwiera wszystkie drzwi wyjściowe (działa także podczas polowania), a gracz otrzymuje spowolnienie i czarną mgłę na 5 s.",
+                                "en": "Opens all exit doors (works during a hunt) and applies slowness plus dark fog to the wisher for 5s."
+                            }
+                        }
+                    ]
+                },
+                {
+                    "category": "other",
+                    "label": { "pl": "Inne", "en": "Other" },
+                    "wishes": [
+                        {
+                            "phrase": {
+                                "pl": "Chciałbym ożywić mojego przyjaciela",
+                                "en": "I wish to revive my friend"
+                            },
+                            "effect": {
+                                "pl": "Ożywia martwego gracza, ale używający życzenia ma 50% szans na śmierć.",
+                                "en": "Revives a dead player, with a 50% chance that the wisher dies."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Pragnę wiedzy",
+                                "en": "I wish for knowledge"
+                            },
+                            "effect": {
+                                "pl": "Wykreśla w dzienniku jeden błędny dowód oraz duchy powiązane z tym dowodem, wywołuje przeklęte polowanie blisko życzącego i nakłada na niego czarną mgłę oraz stłumienie dźwięków aż do śmierci lub końca gry.",
+                                "en": "Crosses out one false evidence and ghosts tied to it in the journal, triggers a cursed hunt near the wisher, and applies dark fog and muffled audio until death or end of game."
+                            }
+                        },
+                        {
+                            "phrase": { "pl": "Pogoda", "en": "Weather" },
+                            "effect": {
+                                "pl": "Zabiera 25% psychiki (nie działa poniżej 25% psychiki), przyciemnia ekran dla wszystkich i zmienia pogodę na wybraną: Słońce, Deszcz (50/50 lekki lub mocny), Czyste Niebo, Mgła albo Śnieg.",
+                                "en": "Drains 25% sanity (cannot be used below 25% sanity), briefly darkens screens for everyone, and changes weather to choice: Sun, Rain (50/50 light or heavy), Clear Sky, Fog, or Snow."
+                            }
+                        },
+                        {
+                            "phrase": {
+                                "pl": "Pragnę Czegokolwiek",
+                                "en": "I wish for anything"
+                            },
+                            "effect": {
+                                "pl": "Losuje jedno niewykorzystane wcześniej życzenie (dostępne tylko przy rozpoznawaniu mowy ustawionym na głos/mowę, nie na tekst).",
+                                "en": "Picks one unused wish at random (available only when voice recognition is set to voice rather than text)."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tarot_cards",
+            "name": { "pl": "Karty Tarota", "en": "Tarot Cards" },
+            "summary": {
+                "pl": "Talia 10 losowych kart na kontrakt; każda wyciągnięta karta ma inny efekt i kolor spalenia.",
+                "en": "Deck of 10 random cards per contract; each drawn card has a distinct effect and burn color."
+            },
+            "cards_per_contract": 10,
+            "cards": [
+                {
+                    "name": { "pl": "The Tower", "en": "The Tower" },
+                    "effect": {
+                        "pl": "Podwaja aktywność ducha na 20 s.",
+                        "en": "Doubles ghost activity for 20s."
+                    },
+                    "burn_color": { "pl": "Niebieski", "en": "Blue" },
+                    "draw_chance_percent": 20
+                },
+                {
+                    "name": {
+                        "pl": "The Wheel of Fortune",
+                        "en": "The Wheel of Fortune"
+                    },
+                    "effect": {
+                        "pl": "Zabiera 25% psychiki (czerwony) lub dodaje 25% psychiki (zielony).",
+                        "en": "Drains 25% sanity (red) or restores 25% sanity (green)."
+                    },
+                    "burn_color": {
+                        "pl": "Czerwony / Zielony",
+                        "en": "Red / Green"
+                    },
+                    "draw_chance_percent": 20
+                },
+                {
+                    "name": { "pl": "The Devil", "en": "The Devil" },
+                    "effect": {
+                        "pl": "Duch wykonuje event w kierunku najbliższego gracza.",
+                        "en": "Ghost triggers an event toward the nearest player."
+                    },
+                    "burn_color": { "pl": "Różowy", "en": "Pink" },
+                    "draw_chance_percent": 10
+                },
+                {
+                    "name": { "pl": "The Fool", "en": "The Fool" },
+                    "effect": {
+                        "pl": "Brak efektu poza polowaniem (100% podczas trwającego polowania).",
+                        "en": "No effect outside hunts (100% during an active hunt)."
+                    },
+                    "burn_color": {
+                        "pl": "Jasny Fioletowy",
+                        "en": "Light Purple"
+                    },
+                    "draw_chance_percent": 17
+                },
+                {
+                    "name": { "pl": "The Sun", "en": "The Sun" },
+                    "effect": {
+                        "pl": "Ustawia psychikę ciągnącego kartę na 100%.",
+                        "en": "Sets the drawing player's sanity to 100%."
+                    },
+                    "burn_color": { "pl": "Żółty", "en": "Yellow" },
+                    "draw_chance_percent": 5
+                },
+                {
+                    "name": { "pl": "The Moon", "en": "The Moon" },
+                    "effect": {
+                        "pl": "Ustawia psychikę ciągnącego kartę na 0%.",
+                        "en": "Sets the drawing player's sanity to 0%."
+                    },
+                    "burn_color": { "pl": "Biały", "en": "White" },
+                    "draw_chance_percent": 5
+                },
+                {
+                    "name": { "pl": "The Hanged Man", "en": "The Hanged Man" },
+                    "effect": {
+                        "pl": "Zabija gracza ciągnącego kartę.",
+                        "en": "Kills the player who drew the card."
+                    },
+                    "burn_color": { "pl": "Brak", "en": "None" },
+                    "draw_chance_percent": 1
+                },
+                {
+                    "name": { "pl": "The Hermit", "en": "The Hermit" },
+                    "effect": {
+                        "pl": "Teleportuje ducha do ulubionego pokoju i zamyka go w nim na 1 min.",
+                        "en": "Teleports the ghost to its favorite room and traps it there for 1 min."
+                    },
+                    "burn_color": {
+                        "pl": "Jasny Niebieski",
+                        "en": "Light Blue"
+                    },
+                    "draw_chance_percent": 10
+                },
+                {
+                    "name": {
+                        "pl": "The High Priestess",
+                        "en": "The High Priestess"
+                    },
+                    "effect": {
+                        "pl": "Wskrzesza losowo 1 martwego gracza przy jego ciele (lub pierwszą osobę, która umrze, jeśli nikt jeszcze nie zginął).",
+                        "en": "Revives 1 random dead player at their body (or the first player to die if none are dead yet)."
+                    },
+                    "burn_color": { "pl": "Jasny Żółty", "en": "Light Yellow" },
+                    "draw_chance_percent": 2
+                },
+                {
+                    "name": { "pl": "Death", "en": "Death" },
+                    "effect": {
+                        "pl": "Wywołuje przeklęte polowanie.",
+                        "en": "Triggers a cursed hunt."
+                    },
+                    "burn_color": { "pl": "Fioletowy", "en": "Purple" },
+                    "draw_chance_percent": 10
+                }
+            ]
+        },
+        {
+            "id": "haunted_mirror",
+            "name": { "pl": "Przeklęte Lustro", "en": "Haunted Mirror" },
+            "summary": {
+                "pl": "Pokazuje ulubiony pokój ducha w formie powoli przesuwającego się widoku.",
+                "en": "Shows the ghost's favorite room as a slowly panning view."
+            },
+            "mechanics": [
+                {
+                    "pl": "Aktywacja i dezaktywacja prawym przyciskiem myszy; pobiera 7,5% psychiki na sekundę lub minimum 20% psychiki (co jest większe), więc krótkie użycie zabiera 20%, a np. 3 s — 22,5%.",
+                    "en": "Activated and deactivated with right-click; drains 7.5% sanity/s or a minimum of 20% sanity (whichever is greater), so a tap drains 20% and 3s drains 22.5%."
+                },
+                {
+                    "pl": "Wszyscy gracze widzą podgląd z pokoju ducha, gdy jeden gracz używa lustra.",
+                    "en": "All players see the ghost room view while one player uses the mirror."
+                },
+                {
+                    "pl": "Pękniętego lustra nie można już używać.",
+                    "en": "A broken mirror cannot be used again."
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Gracz używa lustra zbyt długo i spada mu psychika do 0% lub próbuje użyć go przy mniej niż 20% psychiki (lustro pęka od razu).",
+                    "en": "Player uses it too long and sanity hits 0%, or tries to use it with under 20% sanity (mirror breaks immediately)."
+                }
+            ]
+        },
+        {
+            "id": "summoning_circle",
+            "name": { "pl": "Pentagram", "en": "Summoning Circle" },
+            "summary": {
+                "pl": "Przyzywa ducha i unieruchamia go na 5 s przed rozpoczęciem przeklętego polowania — pomocne przy zdjęciu ducha.",
+                "en": "Summons the ghost and immobilizes it for 5s before starting a cursed hunt — useful for ghost photos."
+            },
+            "uses_per_contract": 1,
+            "mechanics": [
+                {
+                    "pl": "Wymaga zapalenia 5 świec; każda świeca zabiera pobliskim graczom po 16% psychiki (łącznie 80%).",
+                    "en": "Requires lighting 5 candles; each candle drains 16% sanity from nearby players (80% total)."
+                },
+                {
+                    "pl": "Jeśli gracz zapali ostatnią świecę mając poniżej 16% psychiki, duch teleportuje się bez 5-sekundowego unieruchomienia i od razu zaczyna polowanie.",
+                    "en": "Lighting the final candle with under 16% sanity teleports the ghost without the 5s freeze and starts a hunt immediately."
+                },
+                {
+                    "pl": "Aktywacja w trakcie trwającego polowania teleportuje ducha do pentagramu i kontynuuje polowanie od razu.",
+                    "en": "Activating during an active hunt teleports the ghost to the circle and continues the hunt immediately."
+                },
+                {
+                    "pl": "Próba zapalenia nie-ostatniej świecy bez wystarczającej psychiki powoduje jej natychmiastowe zgaśnięcie; Shade pojawia się wyłącznie jako cień; warto zrobić zdjęcie pentagramowi przed zdjęciem ducha.",
+                    "en": "Trying to light a non-final candle without enough sanity extinguishes it immediately; Shade appears only as a shadow; photograph the circle before the ghost if needed."
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Zapalenie wszystkich 5 świec aktywuje przeklęte polowanie (po 5 s unieruchomienia lub od razu przy <16% psychiki na ostatniej świecy).",
+                    "en": "Lighting all 5 candles triggers a cursed hunt (after a 5s freeze, or immediately if <16% sanity on the last candle)."
+                }
+            ]
+        },
+        {
+            "id": "voodoo_doll",
+            "name": { "pl": "Laleczka Voodoo", "en": "Voodoo Doll" },
+            "summary": {
+                "pl": "Wbijanie szpilek zmusza ducha do wykonania interakcji w pobliżu.",
+                "en": "Pushing pins forces the ghost to perform a nearby interaction."
+            },
+            "total_pins": 10,
+            "mechanics": [
+                {
+                    "pl": "Ma 10 szpilek wbijanych losowo; każda zwykła szpilka kosztuje 5% psychiki, a szpilka w serce — 10% psychiki.",
+                    "en": "Has 10 randomly pushed pins; standard pin costs 5% sanity, heart pin costs 10% sanity."
+                },
+                {
+                    "pl": "Duch wykona interakcję tylko wtedy, gdy w pobliżu jest obiekt do interakcji (nie wymusza zapisu książki ani D.O.T.S., ale pomaga przy EMF 5 i Ultrafiolecie).",
+                    "en": "Ghost interacts only if an interactable object is nearby (does not force Ghost Writing or D.O.T.S., but helps with EMF 5 and Ultraviolet)."
+                },
+                {
+                    "pl": "Użycie przy 0% psychiki wbija wszystkie pozostałe szpilki naraz (mogą wystąpić jednoczesne interakcje, co nie jest cechą Bliźniąt ani Poltergeista), a następnie zaczyna się przeklęte polowanie.",
+                    "en": "Using at 0% sanity pushes all remaining pins at once (simultaneous interactions can happen, distinct from Twins/Poltergeist), followed by a cursed hunt."
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Wbicie szpilki w serce.",
+                    "en": "Pushing the heart pin."
+                },
+                {
+                    "pl": "Użycie laleczki przy 0% psychiki.",
+                    "en": "Using the doll at 0% sanity."
+                }
+            ]
+        },
+        {
+            "id": "ouija_board",
+            "name": { "pl": "Tablica Ouija", "en": "Ouija Board" },
+            "summary": {
+                "pl": "Pozwala zadawać pytania duchowi, dopóki na tablicy widoczny jest aktywny wskaźnik.",
+                "en": "Allows asking the ghost questions while the planchette/indicator is active on the board."
+            },
+            "mechanics": [
+                {
+                    "pl": "Aktywna, gdy widoczny jest wskaźnik; pozwala też sprawdzić EMF pytaniami o niskim koszcie psychiki (np. o wiek).",
+                    "en": "Active while the indicator is visible; can also help check EMF using low-sanity questions (e.g. age)."
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Odejdź od tablicy bez pożegnania na więcej niż 5 m.",
+                    "en": "Walk more than 5m away from the board without saying goodbye."
+                },
+                {
+                    "pl": "Użycie opcji „Bawimy się w chowanego?”.",
+                    "en": "Using the 'Hide and seek' prompt."
+                },
+                {
+                    "pl": "Zadanie pytania bez wystarczającej ilości psychiki.",
+                    "en": "Asking a question without enough sanity."
+                }
+            ],
+            "questions": [
+                {
+                    "category": { "pl": "Informacja", "en": "Information" },
+                    "prompt": {
+                        "pl": "Gdzie jesteś? / Where are you?",
+                        "en": "Where are you?"
+                    },
+                    "sanity_cost_percent": 50,
+                    "answer": {
+                        "pl": "Podaje obecną lokalizację ducha (angielska nazwa pokoju, nie ulubiony pokój).",
+                        "en": "Gives the ghost's current room in English (not its favorite room)."
+                    }
+                },
+                {
+                    "category": { "pl": "Informacja", "en": "Information" },
+                    "prompt": {
+                        "pl": "Gdzie jest kość? / Where is the bone?",
+                        "en": "Where is the bone?"
+                    },
+                    "sanity_cost_percent": 20,
+                    "answer": {
+                        "pl": "Podaje lokalizację kości w języku angielskim.",
+                        "en": "Gives the bone's location in English."
+                    }
+                },
+                {
+                    "category": { "pl": "Informacja", "en": "Information" },
+                    "prompt": {
+                        "pl": "Czy rozmawiasz ze wszystkimi? / Do you respond to everyone?",
+                        "en": "Do you respond to everyone?"
+                    },
+                    "sanity_cost_percent": 20,
+                    "answer": {
+                        "pl": "TAK (odpowiada także gdy w pokoju są inni gracze) lub NIE (odpowiada tylko samotnym graczom).",
+                        "en": "YES (responds with others in the room) or NO (responds only when alone)."
+                    }
+                },
+                {
+                    "category": { "pl": "Psychika", "en": "Sanity" },
+                    "prompt": {
+                        "pl": "Czy jestem obłąkany? / Am I insane?",
+                        "en": "Am I insane?"
+                    },
+                    "sanity_cost_percent": 5,
+                    "answer": {
+                        "pl": "Powyżej 90% — NIE; 90%–20% — MOŻE; poniżej 20% — TAK.",
+                        "en": "Above 90% — NO; 90%–20% — MAYBE; below 20% — YES."
+                    }
+                },
+                {
+                    "category": { "pl": "Psychika", "en": "Sanity" },
+                    "prompt": {
+                        "pl": "Jak bardzo obłąkany jestem? / How sane am I?",
+                        "en": "How sane am I?"
+                    },
+                    "sanity_cost_percent": 5,
+                    "answer": {
+                        "pl": ">80% HEALTHY; 60%–80% GOOD; 40%–60% AVERAGE; 20%–40% BAD; <20% AWFUL.",
+                        "en": ">80% HEALTHY; 60%–80% GOOD; 40%–60% AVERAGE; 20%–40% BAD; <20% AWFUL."
+                    }
+                },
+                {
+                    "category": { "pl": "Różne", "en": "Miscellaneous" },
+                    "prompt": {
+                        "pl": "Bawimy się w chowanego? / Hide and seek",
+                        "en": "Hide and seek"
+                    },
+                    "sanity_cost_percent": 0,
+                    "answer": {
+                        "pl": "Odlicza od 5 do 0, po czym tablica pęka i zaczyna się przeklęte polowanie.",
+                        "en": "Counts down from 5 to 0, then breaks the board and starts a cursed hunt."
+                    }
+                },
+                {
+                    "category": { "pl": "Różne", "en": "Miscellaneous" },
+                    "prompt": {
+                        "pl": "Jaki jest twój wiek? / How old are you?",
+                        "en": "How old are you?"
+                    },
+                    "sanity_cost_percent": 5,
+                    "answer": {
+                        "pl": "Wskazuje wiek (2–90); u starzejącego się Thaye może podać wyższą wartość.",
+                        "en": "Gives age (2–90); may show a higher value for aging Thaye."
+                    }
+                },
+                {
+                    "category": { "pl": "Różne", "en": "Miscellaneous" },
+                    "prompt": {
+                        "pl": "Jak umarłeś? / How did you die?",
+                        "en": "How did you die?"
+                    },
+                    "sanity_cost_percent": 5,
+                    "answer": {
+                        "pl": "Odpowiada po angielsku: Accident, Drowned, Choked, Murder, Shot, Fell lub Slipped.",
+                        "en": "Answers in English: Accident, Drowned, Choked, Murder, Shot, Fell, or Slipped."
+                    }
+                }
+            ]
+        }
+    ]
+}
