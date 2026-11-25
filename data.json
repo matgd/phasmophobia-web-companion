@@ -53,6 +53,281 @@
             ]
         },
         {
+            "id": "aswang",
+            "name": { "pl": "Aswang", "en": "Aswang" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" }
+            ],
+            "speed": {
+                "min_mps": 1.53,
+                "max_mps": 1.53,
+                "display": { "pl": "1,53 m/s", "en": "1.53 m/s" }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": {
+                    "pl": "Przyśpiesza szybciej (LOS: 8 s zamiast 13 s)",
+                    "en": "Faster LOS ramp-up (8s vs 13s)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "hunt",
+                    "pl": "Gdy wejdzie do oficjalnej kryjówki, w której wykrył gracza, polowanie natychmiast się kończy i gracz nie ginie.",
+                    "en": "When it enters an official hiding spot where it detected a player, the hunt ends immediately and the player does not die."
+                },
+                {
+                    "category": "speed",
+                    "pl": "Szybciej rozwija prędkość poprzez LOS — zamiast standardowych 13 s jest to 8 s.",
+                    "en": "Builds speed via line of sight faster — 8s instead of the standard 13s."
+                }
+            ]
+        },
+        {
+            "id": "banshee",
+            "name": { "pl": "Zmora", "en": "Banshee" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" },
+                { "pl": "Widmowe kule", "en": "Ghost Orb" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki (dotyczy TYLKO targetu; pozostali gracze mogą mieć po 100% psychiki).",
+                    "en": "Below 50% sanity (applies ONLY to the target; other players can have 100% sanity)."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": {
+                "pl": "W większości przypadków nie daje się jednoznacznie rozpoznać po samym wyglądzie polowania.",
+                "en": "In most cases not recognizable by hunt behavior alone."
+            },
+            "special_traits": [
+                {
+                    "category": "evidence",
+                    "pl": "Unikalna odpowiedź na mikrofonie parabolicznym — krzyk (szansa 33%, 20 różnych odmian).",
+                    "en": "Unique parabolic microphone response — scream (33% chance, 20 variations)."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Goni wyłącznie swój cel podczas polowań (inni gracze mogą przez niego przejść i nie zginą), chyba że cel jest poza mapą; po śmierci celu inny gracz go zastępuje (także przy włączonym wydłużeniu polowania po śmierci graczy).",
+                    "en": "Chases only its target during hunts (others can walk through safely), unless the target is outside the map; another player replaces the target upon death (including when extended hunt on player death is enabled)."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Cel traci 15% psychiki (zamiast 10%) podczas śpiewanego eventu przy wejściu w ducha; wyższa szansa na śpiewany event; może wędrować (roam) do celu bez zostawiania EMF (66% szansy, na tym samym piętrze lub w jednoizbowej piwnicy); wyłącznie duch kobiecy (imię i model).",
+                    "en": "Target loses 15% sanity (instead of 10%) during a singing event on ghost contact; higher chance of singing events; can roam to target without leaving EMF (66% chance, same floor or single-room basement); female ghost only (name and model)."
+                }
+            ]
+        },
+        {
+            "id": "dayan",
+            "name": { "pl": "Dayan", "en": "Dayan" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Widmowe kule", "en": "Ghost Orb" },
+                { "pl": "EMF 5", "en": "EMF Level 5" },
+                { "pl": "Spirit Box", "en": "Spirit Box" }
+            ],
+            "speed": {
+                "min_mps": 1.2,
+                "max_mps": 2.25,
+                "display": {
+                    "pl": "1,2 m/s – 2,25 m/s",
+                    "en": "1.2 m/s – 2.25 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza LOS (wyjątek: dobieganie do gracza powyżej 10 m z LOS)",
+                    "en": "Does not speed up via LOS (exception: closing distance from >10m with LOS)"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 45% przy graczu stojącym w miejscu; poniżej 50% bez gracza w pobliżu; poniżej 65% przy poruszającym się graczu.",
+                    "en": "Below 45% near a stationary player; below 50% with no nearby player; below 65% near a moving player."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "speed",
+                    "pl": "W zasięgu do 10 m: 1,2 m/s gdy gracz stoi w miejscu, 2,25 m/s gdy chodzi/biega, 1,7 m/s gdy brak gracza w zasięgu; przy LOS powyżej 10 m przyspiesza aż do wejścia w zasięg 10 m.",
+                    "en": "Within 10m: 1.2 m/s if player stands still, 2.25 m/s if walking/running, 1.7 m/s if no player in range; with LOS >10m speeds up until reaching 10m."
+                },
+                {
+                    "category": "behavior",
+                    "pl": "Może być wyłącznie kobiecym duchem (imię i model ducha).",
+                    "en": "Female ghost only (name and model)."
+                }
+            ]
+        },
+        {
+            "id": "deildegast",
+            "name": { "pl": "Deildegast", "en": "Deildegast" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "EMF 5", "en": "EMF Level 5" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" }
+            ],
+            "speed": {
+                "min_mps": 0.4,
+                "max_mps": 3.0,
+                "display": {
+                    "pl": "0,4 m/s – 3,0 m/s",
+                    "en": "0.4 m/s – 3.0 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza LOS",
+                    "en": "Does not speed up via LOS"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 50,
+                "notes": {
+                    "pl": "Poniżej 50% psychiki.",
+                    "en": "Below 50% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "speed",
+                    "pl": "Zaczyna polowanie z 3,0 m/s bez interakcji z przedmiotami; każdy unikalny przedmiot przed polowaniem zwalnia go o 0,1 m/s (do 0,4 m/s przy 26+ przedmiotach), a prędkość resetuje się po każdym polowaniu.",
+                    "en": "Starts hunts at 3.0 m/s with no item interactions; each unique interacted item before a hunt slows it by 0.1 m/s (down to 0.4 m/s at 26+ items), resetting after each hunt."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Prędkość jest zablokowana w trakcie polowania (nie zwalnia podczas pościgu); liczą się też przełączniki świateł, bezpieczniki, krany oraz interakcje martwych graczy.",
+                    "en": "Speed is locked during a hunt (cannot slow down mid-hunt); light switches, breakers, taps, and dead players' interactions also count."
+                }
+            ]
+        },
+        {
+            "id": "demon",
+            "name": { "pl": "Demon", "en": "Demon" },
+            "forced_evidence": null,
+            "evidence": [
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Mroźne temperatury", "en": "Freezing Temperatures" },
+                { "pl": "Ultrafiolet", "en": "Ultraviolet" }
+            ],
+            "speed": {
+                "min_mps": 1.7,
+                "max_mps": 1.7,
+                "display": {
+                    "pl": "1,7 m/s (standardowa)",
+                    "en": "1.7 m/s (standard)"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": true,
+                "label": { "pl": "Przyśpiesza (LOS)", "en": "Speeds up (LOS)" }
+            },
+            "hunt_sanity": {
+                "base_percent": 70,
+                "notes": {
+                    "pl": "Poniżej 70% psychiki (może rozpocząć polowanie na dowolnym poziomie, nawet 100%, dzięki specjalnej umiejętności).",
+                    "en": "Below 70% sanity (can hunt at any sanity, even 100%, via special ability)."
+                }
+            },
+            "can_be_recognized_during_hunt": false,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "smudge",
+                    "pl": "Może rozpocząć polowanie po 60 s / 1 min po użyciu kadzidła (zamiast 90 s / 1,5 min), a umiejętnością nawet pod wpływem kadzidła.",
+                    "en": "Can hunt 60s / 1 min after smudging (instead of 90s / 1.5 min), and even while smudged via ability."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Odstęp między polowaniami może wynosić 20 s (zamiast 25 s); krucyfiks ma działanie zwiększone o 50% (tier I: 4,5 m, tier II: 6 m, tier III: 7,5 m).",
+                    "en": "Cooldown between hunts can be 20s (instead of 25s); crucifix range increased by 50% (Tier I: 4.5m, Tier II: 6m, Tier III: 7.5m)."
+                }
+            ]
+        },
+        {
+            "id": "deogen",
+            "name": { "pl": "Deogen", "en": "Deogen" },
+            "forced_evidence": { "pl": "Spirit Box", "en": "Spirit Box" },
+            "evidence": [
+                { "pl": "Spirit Box", "en": "Spirit Box" },
+                { "pl": "Wpisy ducha", "en": "Ghost Writing" },
+                { "pl": "Projektor D.O.T.S.", "en": "D.O.T.S. Projector" }
+            ],
+            "speed": {
+                "min_mps": 0.4,
+                "max_mps": 3.0,
+                "display": {
+                    "pl": "0,4 m/s – 3,0 m/s",
+                    "en": "0.4 m/s – 3.0 m/s"
+                }
+            },
+            "line_of_sight_speed": {
+                "can_speed_up": false,
+                "label": {
+                    "pl": "Nie przyśpiesza LOS",
+                    "en": "Does not speed up via LOS"
+                }
+            },
+            "hunt_sanity": {
+                "base_percent": 40,
+                "notes": {
+                    "pl": "Poniżej 40% psychiki.",
+                    "en": "Below 40% sanity."
+                }
+            },
+            "can_be_recognized_during_hunt": true,
+            "hunt_recognition_notes": null,
+            "special_traits": [
+                {
+                    "category": "evidence",
+                    "pl": "Specjalna odpowiedź na Spirit Boxie w odległości do 1 m od ducha (33% szansy); wymuszony dowód Spirit Box na koszmarze, obłędzie itp.",
+                    "en": "Special Spirit Box response within 1m of the ghost (33% chance); forced Spirit Box on Nightmare, Insanity, etc."
+                },
+                {
+                    "category": "hunt",
+                    "pl": "Bardziej widoczny w trakcie polowania; nie można się przed nim schować; szybko biegnie do najbliższego gracza i zwalnia blisko niego (wolniejszy od gracza).",
+                    "en": "More visible during hunts; cannot hide from it; rushes fast to the nearest player and slows down near them (slower than player)."
+                }
+            ]
+        },
+        {
             "id": "gallu",
             "name": { "pl": "Gallu", "en": "Gallu" },
             "forced_evidence": null,
@@ -85,17 +360,17 @@
             "special_traits": [
                 {
                     "category": "behavior",
-                    "pl": "Ma 3 fazy (normalna -> agresywna -> osłabiona) zmieniane przez sól (opóźnienie 2–3 s), spalenie krucyfiksu lub kadzidło (od razu); po zmianie fazy nie wdepnie w pozostałe kupki soli.",
-                    "en": "Has 3 phases (normal -> aggressive -> weakened) shifted by salt (2–3s delay), crucifix burn, or smudge (immediate); won't step in remaining salt piles after phase shift."
+                    "pl": "Ma 3 fazy (normalna -> agresywna -> osłabiona) zmieniane przez sól (opóźnienie 2–3 s), spalenie krucyfiksu lub kadzidło (od razu); po zmianie fazy nie wejdzie w pozostałe kupki soli z rozłożonego zestawu.",
+                    "en": "Has 3 phases (normal -> aggressive -> weakened) shifted by salt (2–3s delay), crucifix burn, or smudge (immediate); won't step in remaining salt piles after shifting phase."
                 },
                 {
                     "category": "hunt",
-                    "pl": "Faza agresywna: polowanie od 60% psychiki, zasięg krucyfiksu mniejszy o 2 m, ogłuszenie kadzidłem 4 s, prędkość 1,96 m/s, NIE wchodzi w sól.",
+                    "pl": "Faza agresywna: polowanie od 60% psychiki, zasięg krucyfiksu zmniejszony o 2 m, ogłuszenie kadzidłem 4 s, prędkość 1,96 m/s, NIE wchodzi w sól.",
                     "en": "Aggressive phase: hunts from 60% sanity, crucifix range reduced by 2m, smudge stun 4s, speed 1.96 m/s, does NOT step in salt."
                 },
                 {
                     "category": "hunt",
-                    "pl": "Faza osłabiona: polowanie od 40% psychiki, zasięg krucyfiksu większy o 1 m, ogłuszenie kadzidłem 6 s, prędkość 1,36 m/s.",
+                    "pl": "Faza osłabiona: polowanie od 40% psychiki, zasięg krucyfiksu zwiększony o 1 m, ogłuszenie kadzidłem 6 s, prędkość 1,36 m/s.",
                     "en": "Weakened phase: hunts from 40% sanity, crucifix range increased by 1m, smudge stun 6s, speed 1.36 m/s."
                 }
             ]
