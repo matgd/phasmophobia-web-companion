@@ -1942,117 +1942,137 @@
         },
         {
             "id": "tarot_cards",
-            "name": { "pl": "Karty Tarota", "en": "Tarot Cards" },
+            "name": {
+                "pl": "Karty tarota",
+                "en": "Tarot Cards"
+            },
             "summary": {
-                "pl": "Talia 10 losowych kart na kontrakt; każda wyciągnięta karta ma inny efekt i kolor spalenia.",
-                "en": "Deck of 10 random cards per contract; each drawn card has a distinct effect and burn color."
+                "pl": "Talia 10 kart losujących różne efekty dla gracza i ducha (od pełnej psychiki i wskrzeszenia po przeklęte polowanie lub natychmiastową śmierć).",
+                "en": "A deck of 10 cards drawing random effects on the player or ghost (from full sanity and revival to a cursed hunt or instant death)."
             },
             "cards_per_contract": 10,
+            "mechanics": [
+                {
+                    "pl": "Talia ma dokładnie 10 kart na kontrakt; po zużyciu wszystkich kolejnych polowań nie blokuje, ale wydłuża każde kolejne polowanie o 20 s (nawet bez wylosowania Śmierci).",
+                    "en": "Each deck holds 10 cards per contract; once depleted, all future hunts have their duration extended by 20s even if Death was never drawn."
+                },
+                {
+                    "pl": "Wylosowanie jakiejkolwiek karty w trakcie trwającego polowania sprawia, że natychmiast zmienia się ona w Głupca (bez efektu).",
+                    "en": "Drawing any card during an active hunt forces it to turn into The Fool with no effect."
+                },
+                {
+                    "pl": "Karty działają także wtedy, gdy gracz stoi na zewnątrz posesji (np. w furgonetce), z wyjątkiem niektórych efektów wymagających obecności w środku lub celu.",
+                    "en": "Cards still resolve even when drawn outside the investigation area, with specific hunt/event conditions applying."
+                }
+            ],
             "cards": [
                 {
-                    "name": { "pl": "The Tower", "en": "The Tower" },
-                    "effect": {
-                        "pl": "Podwaja aktywność ducha na 20 s.",
-                        "en": "Doubles ghost activity for 20s."
-                    },
+                    "name": { "pl": "Wieża", "en": "The Tower" },
+                    "draw_chance_percent": 20,
                     "burn_color": { "pl": "Niebieski", "en": "Blue" },
-                    "draw_chance_percent": 20
+                    "effect": {
+                        "pl": "Podwaja całą potencjalną aktywność ducha (w tym interakcje, drzwi, książki, D.O.T.S.) na 20 sekund.",
+                        "en": "Doubles all potential ghost activity (interactions, doors, writing books, D.O.T.S.) for 20 seconds."
+                    }
                 },
                 {
                     "name": {
-                        "pl": "The Wheel of Fortune",
+                        "pl": "Koło Fortuny",
                         "en": "The Wheel of Fortune"
                     },
-                    "effect": {
-                        "pl": "Zabiera 25% psychiki (czerwony) lub dodaje 25% psychiki (zielony).",
-                        "en": "Drains 25% sanity (red) or restores 25% sanity (green)."
-                    },
+                    "draw_chance_percent": 20,
                     "burn_color": {
-                        "pl": "Czerwony / Zielony",
-                        "en": "Red / Green"
+                        "pl": "Zielony lub czerwony",
+                        "en": "Green or Red"
                     },
-                    "draw_chance_percent": 20
+                    "effect": {
+                        "pl": "Równa szansa na spalenie na zielono (+25% psychiki) albo na czerwono (-25% psychiki).",
+                        "en": "Equal chance to burn green (+25% sanity) or red (-25% sanity)."
+                    }
                 },
                 {
-                    "name": { "pl": "The Devil", "en": "The Devil" },
-                    "effect": {
-                        "pl": "Duch wykonuje event w kierunku najbliższego gracza.",
-                        "en": "Ghost triggers an event toward the nearest player."
-                    },
-                    "burn_color": { "pl": "Różowy", "en": "Pink" },
-                    "draw_chance_percent": 10
-                },
-                {
-                    "name": { "pl": "The Fool", "en": "The Fool" },
-                    "effect": {
-                        "pl": "Brak efektu poza polowaniem (100% podczas trwającego polowania).",
-                        "en": "No effect outside hunts (100% during an active hunt)."
-                    },
+                    "name": { "pl": "Głupiec", "en": "The Fool" },
+                    "draw_chance_percent": 17,
                     "burn_color": {
-                        "pl": "Jasny Fioletowy",
+                        "pl": "Jasnofioletowy",
                         "en": "Light Purple"
                     },
-                    "draw_chance_percent": 17
+                    "effect": {
+                        "pl": "Udaje inną kartę przed spaleniem i zamianą w Głupca; nie daje żadnego efektu (100% szansy podczas polowania).",
+                        "en": "Mimics another card before burning into The Fool with no effect (100% draw rate during hunts)."
+                    }
                 },
                 {
-                    "name": { "pl": "The Sun", "en": "The Sun" },
+                    "name": { "pl": "Diabeł", "en": "The Devil" },
+                    "draw_chance_percent": 10,
+                    "burn_color": { "pl": "Różowy", "en": "Pink" },
                     "effect": {
-                        "pl": "Ustawia psychikę ciągnącego kartę na 100%.",
-                        "en": "Sets the drawing player's sanity to 100%."
-                    },
-                    "burn_color": { "pl": "Żółty", "en": "Yellow" },
-                    "draw_chance_percent": 5
+                        "pl": "Wymusza zdarzenie ducha (Ghost Event) skierowane w stronę gracza znajdującego się najbliżej ducha.",
+                        "en": "Triggers a Ghost Event directed toward the player closest to the ghost."
+                    }
                 },
                 {
-                    "name": { "pl": "The Moon", "en": "The Moon" },
-                    "effect": {
-                        "pl": "Ustawia psychikę ciągnącego kartę na 0%.",
-                        "en": "Sets the drawing player's sanity to 0%."
-                    },
-                    "burn_color": { "pl": "Biały", "en": "White" },
-                    "draw_chance_percent": 5
-                },
-                {
-                    "name": { "pl": "The Hanged Man", "en": "The Hanged Man" },
-                    "effect": {
-                        "pl": "Zabija gracza ciągnącego kartę.",
-                        "en": "Kills the player who drew the card."
-                    },
-                    "burn_color": { "pl": "Brak", "en": "None" },
-                    "draw_chance_percent": 1
-                },
-                {
-                    "name": { "pl": "The Hermit", "en": "The Hermit" },
-                    "effect": {
-                        "pl": "Teleportuje ducha do ulubionego pokoju i zamyka go w nim na 1 min.",
-                        "en": "Teleports the ghost to its favorite room and traps it there for 1 min."
-                    },
-                    "burn_color": {
-                        "pl": "Jasny Niebieski",
-                        "en": "Light Blue"
-                    },
-                    "draw_chance_percent": 10
-                },
-                {
-                    "name": {
-                        "pl": "The High Priestess",
-                        "en": "The High Priestess"
-                    },
-                    "effect": {
-                        "pl": "Wskrzesza losowo 1 martwego gracza przy jego ciele (lub pierwszą osobę, która umrze, jeśli nikt jeszcze nie zginął).",
-                        "en": "Revives 1 random dead player at their body (or the first player to die if none are dead yet)."
-                    },
-                    "burn_color": { "pl": "Jasny Żółty", "en": "Light Yellow" },
-                    "draw_chance_percent": 2
-                },
-                {
-                    "name": { "pl": "Death", "en": "Death" },
-                    "effect": {
-                        "pl": "Wywołuje przeklęte polowanie.",
-                        "en": "Triggers a cursed hunt."
-                    },
+                    "name": { "pl": "Śmierć", "en": "Death" },
+                    "draw_chance_percent": 10,
                     "burn_color": { "pl": "Fioletowy", "en": "Purple" },
-                    "draw_chance_percent": 10
+                    "effect": {
+                        "pl": "Natychmiast wywołuje przeklęte polowanie i wydłuża czas trwania wszystkich kolejnych polowań o 20 s.",
+                        "en": "Immediately triggers a cursed hunt and extends the duration of all subsequent hunts by 20s."
+                    }
+                },
+                {
+                    "name": { "pl": "Pustelnik", "en": "The Hermit" },
+                    "draw_chance_percent": 10,
+                    "burn_color": { "pl": "Turkusowy / Cyjan", "en": "Cyan" },
+                    "effect": {
+                        "pl": "Teleportuje ducha z powrotem do jego pokoju i zatrzymuje go tam na 60 sekund (nie przerywa trwającego polowania).",
+                        "en": "Teleports the ghost back to its ghost room and traps it there for 60 seconds (does not stop active hunts)."
+                    }
+                },
+                {
+                    "name": { "pl": "Słońce", "en": "The Sun" },
+                    "draw_chance_percent": 5,
+                    "burn_color": { "pl": "Żółty", "en": "Yellow" },
+                    "effect": {
+                        "pl": "Natychmiast przywraca poziom psychiki gracza do 100%.",
+                        "en": "Immediately restores the player's sanity to 100%."
+                    }
+                },
+                {
+                    "name": { "pl": "Księżyc", "en": "The Moon" },
+                    "draw_chance_percent": 5,
+                    "burn_color": { "pl": "Biały", "en": "White" },
+                    "effect": {
+                        "pl": "Natychmiast obniża poziom psychiki gracza do 0%.",
+                        "en": "Immediately drops the player's sanity to 0%."
+                    }
+                },
+                {
+                    "name": { "pl": "Kapłanka", "en": "The High Priestess" },
+                    "draw_chance_percent": 2,
+                    "burn_color": { "pl": "Jasnożółty", "en": "Light Yellow" },
+                    "effect": {
+                        "pl": "Wskrzesza w miejscu zgonu pierwszego martwego gracza z listy lobby; jeśli nikt nie nie żyje — ożywi kolejną osobę, która zginie. Nie kumuluje się.",
+                        "en": "Revives the first dead player in lobby join order where they died; if no one is dead, revives the next player to die. Does not stack."
+                    }
+                },
+                {
+                    "name": { "pl": "Wisielec", "en": "The Hanged Man" },
+                    "draw_chance_percent": 1,
+                    "burn_color": {
+                        "pl": "Brak (nie spala się)",
+                        "en": "None (does not burn)"
+                    },
+                    "effect": {
+                        "pl": "Natychmiast zabija gracza, który ją wyciągnął; nie spala się po użyciu. Nie może być wylosowana bezpośrednio przy włączonym „Przyjaznym duchu”.",
+                        "en": "Instantly kills the player who drew it and does not burn afterwards. Cannot be drawn directly when Friendly Ghost is enabled."
+                    }
+                }
+            ],
+            "cursed_hunt_triggers": [
+                {
+                    "pl": "Wylosowanie karty Śmierć (10% szansy, fioletowy płomień) natychmiast rozpoczyna przeklęte polowanie.",
+                    "en": "Drawing Death (10% chance, purple flame) immediately triggers a cursed hunt."
                 }
             ]
         },
